@@ -116,19 +116,6 @@ cable.tan_cha[:, 0] = gaussian_filter(cable.tan_cha[:, 0], sigma=2)
 cable.tan_cha[:, 1] = gaussian_filter(cable.tan_cha[:, 1], sigma=2)
 cable.tan_cha[:, 2] = gaussian_filter(cable.tan_cha[:, 2], sigma=2)
 
-# %% Cell 16: (Cable trajectory plot removed)
-
-# %% Cell 17: (Channel sensitivity with tangent vectors plot removed)
-
-# %% Cell 18: (Sensitivity figures plot removed)
-
-# %% Cell 19: (Sensitivity vs. cable length plot removed)
-
-# %% Cell 20: (3D topography with some channel coordinates plot removed)
-
-# %% Cell 21: (Alternate 3D topography with channels plot removed)
-
-# %% Cell 22: (Animation block removed)
 
 # %% Cell 23: Cable dot product test
 cable.dot_product_test()
@@ -170,15 +157,6 @@ def load_vtk_file(filename):
 rec_specfem = load_vtk_file("/home/masa/specfem3d/EXAMPLES/applications/layered_halfspace/OUTPUT_FILES/sr.vtk")
 print("rec_specfem shape:", rec_specfem.shape)
 
-# %% Cell 27: Compare receiver locations
-# (Receiver location plotting removed)
-
-# %% Cell 28: Histogram of receiver elevation differences
-# (Histogram plotting removed)
-
-# %% Cell 29: Plot receiver elevation comparisons
-# (Receiver elevation comparison plotting removed)
-
 # %% Cell 30: Load DAS waveform data
 nrec = rec_loc.shape[0]
 data_vx = []
@@ -203,13 +181,6 @@ data_vel = np.array([data_vx, data_vy, data_vz])
 data_das = cable.forward(data_vel, m_comp='vel', d_comp='strain_rate')
 # (DAS waveform plotting removed)
 
-# %% Cell 33: (Wiggle plot function removed)
-
-# %% Cell 34: (Wiggle plot calls removed)
-
-# %% Cell 35: (Sensitivity vs. cable length plot removed)
-
-# %% Cell 36: (DAS waveform (strain_rate) image plot removed)
 
 # %% Cell 37: Print time vector details
 print("Time vector t:", t)
